@@ -2,14 +2,22 @@
 
 ## About
    - This is the project #2 we developed as part of the Boot Camp: [Data Visualization and Analytics](https://bootcamp.uncc.edu/data/)
-   - I created interactive visualizations. For more details, see [here](#Background).
+   - We created interactive visualizations. For more details, see [here](#Background).
+
+## Team Members
+    * Kurt Dietrich
+    * Sarah Klein
+    * Beth Meyers
+    * Lauren Parrish
+    * Luis Rojas
+
    - Here is a snapshot of the app: 
 <img src="static/images/snapshot.png" width="600" height="400">
 
   ## - The link for the app of this project is [here](https://charlotte-parks.herokuapp.com/).
    - The main tools we used on this project are: postgres, python, html, css, js, leaflet and D3.
 
-## **_Background_**
+## **Background**
 
 We’re a team of immigrés to Charlotte and we wanted to use this project to get to know our adopted
 city a little better. We decided to explore Charlotte Parks and Recreation because of our mutual love
@@ -43,10 +51,8 @@ Within the database - the zipcode and parks tables can be connected by zipcode n
 This site was also used to lookup and pinpoint the coordinate location for each of the parks (by using address).
 
 ## Flask API
-Utilizing Flask, we were able to connect to the databases to assist in visual creation.  The Flask API connection also served as the landing page from which the visualizations and data analysis can be viewed and interacted with by the user.   
 
-A seperate app.py file was created to facilitate the flask build-out.  This included importing dependencies to connect to our SQL databases and then loop through the databases ultimately creating dictionaries from which the data could be 
-pulled by other team members to leverage in visualization creation.  
+After the ETL process finished, we used a Python Flask program for the server side, that pulls the data from the postgres database through the python sqlalchemy library. Therefore, utilizing Flask, we were able to connect to the databases to assist in visual creation. The Flask API connection also served as the landing page from which the visualizations and data analysis can be viewed and interacted with by the user. In the main route we open a sqlachemy session and unpack the information that will be required for the web pages and create a single object. A seperate app.py file was created to facilitate the flask build-out.  This included importing dependencies to connect to our SQL databases and then loop through the databases ultimately creating dictionaries from which the data could be pulled by other team members to leverage in visualization creation. The object created is actually a dictionary of different objects that are passed to the index web page template, which is hosted on Heroku. In that way, we are connecting python code to javascript code.   
 
 ## HTML/CSS & Javascript
 The initial HTML/CSS code was built as a shell with placehoders linked to Javascript files for team members to build out thier visualizations and apply 
@@ -88,9 +94,4 @@ The activity list was then connected to an SQL database and then converted into 
 
 The first five steps are completed only once. If you have already created the db with tables and want a full refresh then you need to drop the tables first.
 
-## Team Members
-* Kurt Dietrich
-* Sarah Klein
-* Beth Meyers
-* Lauren Parrish
-* Luis Rojas
+
