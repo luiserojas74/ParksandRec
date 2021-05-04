@@ -1,6 +1,15 @@
 # Charlotte Parks & Recreation
 
-## Background
+## About
+   - This is the project #2 we developed as part of the Boot Camp: [Data Visualization and Analytics](https://bootcamp.uncc.edu/data/)
+   - I created interactive visualizations. For more details, see [here](#Background).
+   - Here is a snapshot of the app: 
+<img src="static/images/snapshot.png" width="600" height="400">
+
+  ## - The link for the app of this project is [here](https://charlotte-parks.herokuapp.com/).
+   - The main tools we used on this project are: postgres, python, html, css, js, leaflet and D3.
+
+## **_Background_**
 
 We’re a team of immigrés to Charlotte and we wanted to use this project to get to know our adopted
 city a little better. We decided to explore Charlotte Parks and Recreation because of our mutual love
