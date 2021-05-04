@@ -15,7 +15,7 @@
 <img src="static/images/snapshot.png" width="600" height="400">
 
   ## - The link for the app of this project is [here](https://charlotte-parks.herokuapp.com/).
-   - The main tools we used on this project are: postgres, python, html, css, js, leaflet and D3.
+   - The main tools we used on this project are: postgres, python, html, css, js, leaflet, D3 and Heroku.
 
 ## **Background**
 
